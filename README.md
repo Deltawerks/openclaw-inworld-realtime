@@ -84,7 +84,7 @@ The adapter defaults to voice `Sarah`, TTS model `inworld-tts-2` and model ID `g
 | `vadThreshold`, `prefixPaddingMs`, `silenceDurationMs` | Server VAD controls |
 | `steeringHandling`, `segmenterStrategy`, `responsiveness` | Inworld speech-generation controls |
 | `providerData` | Bounded passthrough of `stt`, `tts`, `memory` and `responsiveness` sections; at most 8 KiB |
-| `baseUrl` | Operator-selected API origin; defaults to `https://api.inworld.ai`. Credentials and conversation data are sent to this origin, so use an override only for a service you trust. |
+| `baseUrl` | Operator-selected API origin; defaults to `https://api.inworld.ai`. Credentials and conversation data are sent to this origin. Use HTTPS and a service you trust; an HTTP override uses an unencrypted WebSocket connection. |
 
 Audio uses mono PCM16 at 24 kHz or G.711 µ-law at 8 kHz, through `gateway-relay`. Inworld owns automatic turn responses and interruption; forced transcript routing and disabling input-audio interruption are rejected. A disconnected session ends; there is no session resumption. Back-channel interjections are not supported because the host playback contract lacks an out-of-band audio channel. Unsupported backchannel configuration is rejected.
 
