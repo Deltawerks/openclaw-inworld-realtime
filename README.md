@@ -26,7 +26,7 @@ npm ci
 npm test
 npm run build
 npm pack
-openclaw plugins install npm-pack:./deltawerks-inworld-realtime-0.1.0.tgz --force --accept-capabilities
+openclaw plugins install npm-pack:./deltawerks-inworld-realtime-0.1.1.tgz --force --accept-capabilities
 openclaw plugins inspect deltawerks-inworld-realtime --runtime --json
 ```
 

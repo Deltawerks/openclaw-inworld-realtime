@@ -24,7 +24,7 @@ const INWORLD_REALTIME_AUDIO_FORMAT_PCM16_24KHZ = {
 export function createInworldRealtimeVoiceProviderMetadata() {
   return {
     id: "deltawerks-inworld-realtime",
-    label: "Deltawerks Inworld Realtime",
+    label: "DeltaWerks Inworld Realtime",
     aliases: ["deltawerks-inworld-voice"],
     defaultModel: INWORLD_REALTIME_DEFAULT_MODEL,
     voices: INWORLD_REALTIME_VOICES,
