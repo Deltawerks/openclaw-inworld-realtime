@@ -1,0 +1,21 @@
+{
+  "id": "deltawerks-inworld-realtime",
+  "name": "Deltawerks Inworld Realtime",
+  "description": "Inworld realtime voice for OpenClaw Talk and Voice Call.",
+  "categories": [
+    "voice"
+  ],
+  "activation": {
+    "onStartup": false
+  },
+  "contracts": {
+    "realtimeVoiceProviders": [
+      "deltawerks-inworld-realtime"
+    ]
+  },
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+  }
+}

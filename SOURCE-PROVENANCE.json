@@ -1,0 +1,39 @@
+{
+  "source_commit": "bd14c72b0e75117e72e424f1429e608420fd5b59",
+  "prior_review_commit": "40a6b7dc0bc81dd027d9a64cb5b3db3c1a1179ec",
+  "source_files_sha256": {
+    "extensions/inworld/realtime-voice-auth.ts": "084b5ed771abf1589772cdd541533b8afef4e02315990be01ccc5481dac6e906",
+    "extensions/inworld/realtime-voice-bridge.ts": "040d4c7a3191bb2a9267dc862c44c045c652c9f5989e3c19b80305e43124472b",
+    "extensions/inworld/realtime-voice-config.ts": "9831e6370a2bae821d3d74c33b008a5f3f92c4abd470e923e90b2ff028b0d3a9",
+    "extensions/inworld/realtime-voice-events.ts": "24a12c7bcfe88e94d7cfe61dd6d11f00259ef6a1898b1542e360f81cb5ccfd5d",
+    "extensions/inworld/realtime-voice-lazy-provider.ts": "6d9cf20d77d2d44732a3a1941306888c26c5dff8c88ee5354ed896481a0e4cc7",
+    "extensions/inworld/realtime-voice-lazy.test.ts": "fc5df0d8cfc18ca5bbc14353bdf1638a220dae8ec97db4bc4162d634e4137dc1",
+    "extensions/inworld/realtime-voice-lazy.ts": "c6bee6ea22712b5f419c639d2f8fd66e9859bf1ee8cfbb7dcf7e580843502a38",
+    "extensions/inworld/realtime-voice-metadata.ts": "7cc4a4c9e2aa9a6b5c5ae4f8dfa65aac8917b2af6c1d3aee050daf3fa3f24c8f",
+    "extensions/inworld/realtime-voice-playback.test.ts": "4fda4fdef0ddd6f502f5ac9c88c5eb127883a5115ad235236d5ec70cf8ae07b7",
+    "extensions/inworld/realtime-voice-protocol.ts": "f491013c3c65a4dfa42620e5c49c71a51108fc58825eeff0a61fe34c30b697a2",
+    "extensions/inworld/realtime-voice-provider.test-support.ts": "64c7fddabc1e1e02c3451eb91056c7115d6dbed83c95be90eecb009dda20d94c",
+    "extensions/inworld/realtime-voice-provider.test.ts": "e9c4f8374362d73ab2792e35ed0f5142f7c3adc26c602db060cccce6ecb0d7db",
+    "extensions/inworld/realtime-voice-provider.ts": "511bb153127ec3d028b683f74337322d6d209d63336d66109955092b74162e61",
+    "extensions/inworld/realtime-voice-socket.test-support.ts": "f260087712ec80a472a68edbae93b6b9e2607c5c7fa006304a84eff35cf48a4e",
+    "extensions/inworld/realtime-voice-timebase.test.ts": "ecbd6121981678511faccd615bcc3e66bd8c95468197ce43de96f312b6e4cb86",
+    "extensions/inworld/realtime-voice-truncate-diagnostics.ts": "a32338ae578d82b11272d62b5337ca6b67ecddfa204362f63c2771720a80c86c",
+    "extensions/inworld/ws-runtime.ts": "3f8b5adc302d464fca7d7d6d3b9d730ef31c45fd1e5987dd0cd04e03523b6e88"
+  },
+  "additional_upstream_helpers": {
+    "src/talk/realtime-session-lifecycle.ts": "2d1ed19f65afcaca051f3a757f392c4da618ef68b1e584ff0b62289683e2c19a",
+    "src/talk/realtime-voice-lazy-lifecycle.ts": "ed0f429041dc6534af9bf3ef862c414c01217224e5e1641858042b0ad43c0418",
+    "src/shared/deferred.ts": "2fd613018154ee1ab3e43d183d9f0c770d286dfef05562f1493cd9674545b884",
+    "packages/media-core/src/base64.ts": "93e6ef481601a3bee0a6cbd304506a0b1ab4e1e05d363be78a00ebe7b63173ac",
+    "src/talk/provider-types.ts": "48d4baebfa5cb8f052618f79cda16338b0eb84d5824d8eaf6aebc19d11c9c8c2",
+    "extensions/inworld/tts.ts": "cf16a9ad2b1419eadbdddb910293418a121b1ed8a240f687e44be36c742c8109"
+  },
+  "adaptations": [
+    "Independent plugin/provider IDs; no speech registration or official inworld alias.",
+    "Infer host types from public OpenClawPluginApi registration; no private realtime SDK imports.",
+    "Keep MIT lifecycle/queue/base64 and audio/outcome helpers package-local.",
+    "Inline existing default endpoint normalizer; no speech/TTS implementation dependency.",
+    "Reuse protocol tests; add independent registration and namespaced config coverage.",
+    "Compile runtime JavaScript only; no private host declaration paths emitted."
+  ]
+}

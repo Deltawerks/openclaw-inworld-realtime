@@ -1,0 +1,64 @@
+{
+  "name": "@deltawerks/inworld-realtime",
+  "version": "0.1.0",
+  "description": "Inworld realtime voice for OpenClaw Talk and Voice Call.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Deltawerks",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Deltawerks/openclaw-inworld-realtime.git"
+  },
+  "homepage": "https://github.com/Deltawerks/openclaw-inworld-realtime#readme",
+  "bugs": {
+    "url": "https://github.com/Deltawerks/openclaw-inworld-realtime/issues"
+  },
+  "files": [
+    "dist/",
+    "openclaw.plugin.json",
+    "README.md",
+    "LICENSE",
+    "NOTICE"
+  ],
+  "engines": {
+    "node": "^24.22.1 || >=26.12.1"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "check": "tsc -p tsconfig.json --noEmit",
+    "prepack": "npm run build"
+  },
+  "dependencies": {
+    "ws": "8.22.0"
+  },
+  "peerDependencies": {
+    "openclaw": "2026.10.7"
+  },
+  "peerDependenciesMeta": {
+    "openclaw": {
+      "optional": true
+    }
+  },
+  "openclaw": {
+    "extensions": [
+      "./dist/index.js"
+    ],
+    "compat": {
+      "pluginApi": ">=2026.10.7 <2026.10.8",
+      "minGatewayVersion": "2026.10.7"
+    },
+    "build": {
+      "openclawVersion": "2026.10.7",
+      "pluginSdkVersion": "2026.10.7"
+    }
+  },
+  "devDependencies": {
+    "@types/node": "26.6.5",
+    "@types/ws": "8.18.2",
+    "clawhub": "0.23.3",
+    "openclaw": "2026.10.7",
+    "typescript": "7.0.2",
+    "vitest": "5.0.5"
+  }
+}
