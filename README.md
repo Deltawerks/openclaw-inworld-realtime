@@ -1,4 +1,4 @@
-# Deltawerks Inworld Realtime
+# DeltaWerks Inworld Realtime
 
 A community OpenClaw plugin for Inworld realtime voice in Talk and Voice Call. It registers `deltawerks-inworld-realtime` as both its plugin ID and realtime provider ID. It can coexist with the official `inworld` speech plugin; it does not register a speech/TTS provider or replace that plugin.
 
@@ -102,7 +102,7 @@ npm pack --dry-run
 
 Tests exercise protocol events, interruption/playback accounting, connection lifecycle, lazy queues, malformed audio and tool-result handling with simulated sockets. They do not replace a real account/session check.
 
-Maintainer: Deltawerks. Report reproducible problems in this repository's issue tracker, with your OpenClaw/plugin versions and redacted logs. Never include API keys or private recordings. This community package is not an official OpenClaw or Inworld product.
+Maintainer: DeltaWerks. Report reproducible problems in this repository's issue tracker, with your OpenClaw/plugin versions and redacted logs. Never include API keys or private recordings. This community package is not an official OpenClaw or Inworld product.
 
 ## License
 
